@@ -1,0 +1,33 @@
+1.1 Create a Repo and stucture it.
+	-Done
+
+1.2 GitHub commands explaing and use cases:
+  git status
+    Shows the current staus of the git. *only shows file changes instead directory changes.
+    To check the modifications.
+  git add 
+    Adds the modifications to staging area.
+    To add the file to staging area.
+  git commit
+    Adds the modification to the local Repository.
+    To commit a file from staging area to local repository.
+  git log
+    Shows the history of the Repository.
+    To check who, when, what happended etc. or just to make sure the commit is done well.
+  git push [ Repo_name ] [ Branch_name ]
+    This command updates the remote referances along with the local referances.
+    After making changes with the local files.
+  git remote -v
+    Manage the set of repositories whose branches you track. Meanwhile showing the URL.
+    To conform forking or to conform adding new remote etc.
+  git branch
+    List, create, or delete branches
+    To modify differnt version of the original file, or when local files were modified and pushed from two different person.
+  fork
+    copy or clone the files from the cloud or remote.
+    To have a copy or make a own version of some Repo.
+
+1.3 Describe how to establish a github repo and how to upload the local projects to github.
+  We can simply open a new repo by clicking "New Repository" in the "+"sign on https://github.com/. Then type in the Repo name and some descriptions. Chosing rather to make it public or Private and GitHUb can build the Readme.md .gitignore and license file if we want. Then press "Creat repository" and it's all done.
+  To upload local projects to github we need to open terminal and change directory to the target file then use "git remote add origin <URL>" command. The repo and github account shoud be established in advanced. Then we can retrieve a HTTPS from the dowload code button. Terminal will then ask forthe account name and password corresponding to this URL.
+   Type git remote -vv to make sure everyting is set.
