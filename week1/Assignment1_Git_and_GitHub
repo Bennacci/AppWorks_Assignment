@@ -28,6 +28,6 @@
     To have a copy or make a own version of some Repo.
 
 1.3 Describe how to establish a github repo and how to upload the local projects to github.
-  We can simply open a new repo by clicking "New Repository" in the "+"sign on https://github.com/. Then type in the Repo name and some descriptions. Chosing rather to make it public or Private and GitHUb can build the Readme.md .gitignore and license file if we want. Then press "Creat repository" and it's all done.
-  To upload local projects to github we need to open terminal and change directory to the target file then use "git remote add origin <URL>" command. The repo and github account shoud be established in advanced. Then we can retrieve a HTTPS from the dowload code button. Terminal will then ask forthe account name and password corresponding to this URL.
-   Type git remote -vv to make sure everyting is set.
+    We can simply open a new repo by clicking "New Repository" in the "+"sign on https://github.com/. Then type in the Repo name and some descriptions. Chosing rather to make it public or Private and GitHUb can build the Readme.md .gitignore and license file if we want. Then press "Creat repository" and it's all done.
+    To upload local projects to github we need to open terminal and change directory to the target file then use "git remote add origin <URL>" command. The repo and github account shoud be established in advanced. Then we can retrieve a HTTPS from the dowload code button. Terminal will then ask forthe account name and password corresponding to this URL.
+    Type git remote -vv to make sure everyting is set.
