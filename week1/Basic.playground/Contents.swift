@@ -32,10 +32,14 @@ salery += raise
 //6.
 let Ans6 = "Equality operation in Swift is =="
 
+// //7.
+// var a = 10
+// var b = 3
+// var remain = a%b
 //7.
-var a = 10
-var b = 3
-var remain = a%b
+let a = 10
+let b = 3
+let remain = a%b
 
 
 //8.
