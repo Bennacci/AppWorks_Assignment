@@ -50,11 +50,9 @@ class People {
 let anyPeople = People(have: Pet(name: "anyName"))
 
 
-guard let anyPeoplespet = anyPeople.pet {
-    print(String(anyPeoplespet))
-} else{
-    print("No Pet")
-}
+guard let anyPeoplespet = anyPeople.pet as?
+    Pet
+    else{ fatalError("\(anyPeople) has no pet")}
 
 
 let somePeople = People(have: Pet(name: "somePet"))
