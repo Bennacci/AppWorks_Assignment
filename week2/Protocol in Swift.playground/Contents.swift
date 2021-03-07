@@ -4,6 +4,7 @@ struct Person: PoliceMan, ToolMan{
     }
     func fixComputer() -> Void {
     }
+    var toolMen: ToolMan
 }
 
 protocol PoliceMan{
@@ -19,5 +20,4 @@ struct Engineer: ToolMan{
     }
 }
 
-let person = Person(name: "Steven")
-// unlike class struct provides a free init so no relative data to declare for Q6?
+var person = Person(name: "Steven", toolMen: Engineer())
