@@ -28,7 +28,7 @@ someGasolineType.getPrice(gasolineType: "oil92")
 Gasoline.oil92.rawValue
 
 //MARK: -enum associate value
-print("Associated values are set when you create a new constant or variable based on one of the enumeration’s cases, and can be different each time you do so. On the other hand, Raw values are set to prepopulated values when you first define the enumeration in your code. The raw value for a particular enumeration case is always the same")
+"Associated values are set when you create a new constant or variable based on one of the enumeration’s cases, and can be different each time you do so. On the other hand, Raw values are set to prepopulated values when you first define the enumeration in your code. The raw value for a particular enumeration case is always the same"
 
 
 //2.
@@ -39,40 +39,40 @@ class Pet {
     }
 }
 
-
 class People {
-    var pet : Pet? = nil
-    init(have pet: Pet){
-    self.pet = pet
+    var pet : Pet?
+}
+
+
+//unwrap with guard let
+let anyPeople = People()
+func checkIfHavePet(pet: Pet?) {
+    guard let pet = pet else {
+        print ("no pet peted")
+        return
+    }
+        print("pets \(pet.name)")
+}
+
+checkIfHavePet(pet: anyPeople.pet)
+
+anyPeople.pet = Pet(name: "LaLa cat")
+checkIfHavePet(pet: anyPeople.pet)
+
+//unwrap with if let
+let anotherAnyPeople = People()
+
+func kindPerson(pet:Pet?){
+    if let pet = pet {
+        print("pets \(pet.name)")
+        return
+    } else {
+        print ("no pet peted")
     }
 }
 
-let anyPeople = People(have: Pet(name: "anyName"))
+anotherAnyPeople.pet = Pet(name: "Sofy dog")
+kindPerson(pet: anotherAnyPeople.pet)
 
 
-guard let anyPeoplespet = anyPeople.pet as?
-    Pet
-    else{ fatalError("\(anyPeople) has no pet")}
 
-
-let somePeople = People(have: Pet(name: "somePet"))
-
-if let somePeoplespet = somePeople.pet {
-    print(String(anyPeoplespet))
-} else{
-    print("No Pet")
-}
-
-//guard let somePeoplepet = somePeople.pet else {
-//    "No Pet"
-//}
-
-//
-//if let somePeoplepet = somePeople.pet {}
-//
-//
-//
-//
-//if  somePeople.pet != nil {
-//    let peopleInstance = somePeople.pet
-//}
