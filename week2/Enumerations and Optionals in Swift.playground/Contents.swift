@@ -43,7 +43,6 @@ class People {
     var pet : Pet?
 }
 
-
 //unwrap with guard let
 let anyPeople = People()
 func checkIfHavePet(pet: Pet?) {
@@ -53,15 +52,12 @@ func checkIfHavePet(pet: Pet?) {
     }
         print("pets \(pet.name)")
 }
-
-checkIfHavePet(pet: anyPeople.pet)
-
-anyPeople.pet = Pet(name: "LaLa cat")
-checkIfHavePet(pet: anyPeople.pet)
+checkIfHavePet(pet: anyPeople.pet) //preset with nil
+anyPeople.pet = Pet(name: "LaLa cat") //set a pet to anyPeople
+checkIfHavePet(pet: anyPeople.pet) //unwrapp succeed
 
 //unwrap with if let
 let anotherAnyPeople = People()
-
 func kindPerson(pet:Pet?){
     if let pet = pet {
         print("pets \(pet.name)")
@@ -70,7 +66,6 @@ func kindPerson(pet:Pet?){
         print ("no pet peted")
     }
 }
-
 anotherAnyPeople.pet = Pet(name: "Sofy dog")
 kindPerson(pet: anotherAnyPeople.pet)
 
