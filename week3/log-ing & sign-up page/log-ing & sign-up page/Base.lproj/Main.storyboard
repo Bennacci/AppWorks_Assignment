@@ -27,8 +27,6 @@
                                     <segment title="Sign in" width="74"/>
                                     <segment title="Sign up" width="71"/>
                                 </segments>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="selectedSegmentTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="scSelected:" destination="BYZ-38-t0r" eventType="valueChanged" id="TFq-cz-YMr"/>
                                 </connections>
@@ -69,7 +67,6 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="19g-g1-m6B" firstAttribute="height" secondItem="VYU-uD-BdC" secondAttribute="height" id="HVi-Eh-PnB"/>
                                             <constraint firstItem="4GC-Fb-gmO" firstAttribute="height" secondItem="VYU-uD-BdC" secondAttribute="height" id="LLO-eA-XeV"/>
@@ -111,7 +108,6 @@
                                         </constraints>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2d4-tA-iqt">
                                 <rect key="frame" x="89.5" y="488" width="235" height="30"/>

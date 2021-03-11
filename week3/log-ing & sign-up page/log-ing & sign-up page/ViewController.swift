@@ -54,8 +54,7 @@ class ViewController: UIViewController {
         } else if checkTextFieldContent.hasText == false &&
         checkTextFieldContent.backgroundColor == .white{
            alertPopUp(title: "Error", message: "Check Password should not be empty.", quitButton: "OK")
-        } else if passwordTextFieldContent.text == checkTextFieldContent.text &&
-        checkTextFieldContent.backgroundColor == .white{
+        } else if checkTextFieldContent.backgroundColor == .white{
            alertPopUp(title: "Error", message: "Signup fail", quitButton: "OK")
         } else {
            alertPopUp(title: "Error", message: "Login fail", quitButton: "OK")
