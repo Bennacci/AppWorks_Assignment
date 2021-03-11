@@ -21,8 +21,7 @@ class SimpleAppViewController: UIViewController {
     
     @IBAction func press(_ sender: Any) {
         self.theView.backgroundColor = colorS.randomElement()
-        let colored = self.theView.backgroundColor
-        self.knowings.text = sevenConditions [colored ?? .black]
+        self.knowings.text = sevenConditions [self.theView.backgroundColor ?? .black]
     }
 }
 
