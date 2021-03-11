@@ -15,16 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJ8-qg-b7t" userLabel="fakeBackGround">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did you Know?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="geh-RL-lSR">
-                                <rect key="frame" x="40" y="144" width="107.5" height="19.5"/>
+                                <rect key="frame" x="40" y="144" width="374" height="19.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -41,11 +33,11 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Show Another Fun Fact"/>
                                 <connections>
-                                    <action selector="press:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LJC-rV-nEl"/>
+                                    <action selector="press:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e9Q-eo-apx"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Nzw-GW-wRS" secondAttribute="bottom" constant="50" id="0Zy-12-zSB"/>
                             <constraint firstItem="geh-RL-lSR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="D8L-H6-zcl" userLabel="Did you Know.top = Safe Area.top + 100"/>
@@ -54,14 +46,15 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sul-fp-32Z" secondAttribute="trailing" constant="40" id="b80-zT-1Vc"/>
                             <constraint firstItem="geh-RL-lSR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="c4z-Z2-UIz"/>
                             <constraint firstItem="sul-fp-32Z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="cDK-Nk-0dY"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="geh-RL-lSR" secondAttribute="trailing" constant="266.5" id="inz-3P-W0r"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="geh-RL-lSR" secondAttribute="trailing" id="inz-3P-W0r"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Nzw-GW-wRS" secondAttribute="trailing" constant="40" id="orb-Eo-dPb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="changeColor" destination="GJ8-qg-b7t" id="b7Q-Ef-PuI"/>
-                        <outlet property="knowings" destination="sul-fp-32Z" id="ySZ-1Q-p60"/>
+                        <outlet property="knowings" destination="sul-fp-32Z" id="4U2-Ty-6Av"/>
+                        <outlet property="theView" destination="8bC-Xf-vdC" id="LQu-8p-TuW"/>
+                        <outlet property="view" destination="8bC-Xf-vdC" id="2ar-ct-ZPr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

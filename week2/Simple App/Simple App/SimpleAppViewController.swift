@@ -11,33 +11,18 @@ import UIKit
 class SimpleAppViewController: UIViewController {
  
     @IBOutlet weak var knowings: UILabel!
-
-    @IBOutlet weak var changeColor: UILabel!
     
+    @IBOutlet var theView: UIView!
     
     override func viewDidLoad() {
-//        containerView.layer.backgroundColor = findColor[self.knowings.text]
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func press(_ sender: Any) {
-        self.knowings.text = textS.randomElement()!
-        self.changeColor.backgroundColor = colorS.randomElement()!
-
-//        self.changeColor.backgroundColor = UIColor.okok
+        self.theView.backgroundColor = colorS.randomElement()
+        let colored = self.theView.backgroundColor
+        self.knowings.text = sevenConditions [colored ?? .black]
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 

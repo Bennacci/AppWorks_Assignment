@@ -1,32 +1,22 @@
 import UIKit
-//
-//  struct SevenThings {
-//    var middleRowText: String
-//    var aColor: UIColor
-//  }
-////}
-let textS = ["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempus.",
-            "Contrary to popular belief, Lorem Ipsum is not simply random text.",
-            "Richard McClintock, a Latin professor at Hampden-Sydney College in ",
-            " looked up one of the more obscure Latin words, consectetur ",
-            " from a Lorem Ipsum passage, and going through the cites of the word ",
-            " This book is a treatise on the theory of ethics, very popular during the. ",
-            " The first line of Lorem Ipsum, Lorem ipsum dolor sit amet .. "]
 
+let red = UIColor(rgb: 0xFF0000)
+let orange = UIColor(rgb: 0xFFA500)
+let yellow = UIColor(rgb: 0xFFFF00)
+let green = UIColor(rgb: 0x008000)
+let blue = UIColor(rgb: 0x000ff)
+let indigo = UIColor(rgb: 0x4B0082)
+let violet = UIColor(rgb: 0xEE82EE)
 
+let colorS: [UIColor] = [red, orange, yellow, green, blue, indigo, violet]
 
-//let findColor = ["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempus." : ".red",
-//                 "Contrary to popular belief, Lorem Ipsum is not simply random text." : ".orange",
-//                 "Richard McClintock, a Latin professor at Hampden-Sydney College in " : ".yellow",
-//                 " looked up one of the more obscure Latin words, consectetur " : ".green",
-//                 " from a Lorem Ipsum passage, and going through the cites of the word " : ".blue",
-//                 " This book is a treatise on the theory of ethics, very popular during the. ": ".indigo",
-//                 " The first line of Lorem Ipsum, Lorem ipsum dolor sit amet .. ": ".violet"]
-
-//var randomRed:CGFloat = CGFloat(arc4random_uniform(256))
-//var randomGreen:CGFloat = CGFloat(arc4random_uniform(256))
-//var randomBlue:CGFloat = CGFloat(arc4random_uniform(256))
-//var myColor =  UIColor(red: randomRed/255, green: randomGreen/255, blue: randomBlue/255, alpha: 1.0)
+let sevenConditions = [red: "(RED)Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempus.",
+                        orange: "(Orange)Contrary to popular belief, Lorem Ipsum is not simply random text.",
+                        yellow: "(Yellow)Richard McClintock, a Latin professor at Hampden-Sydney College in ",
+                        green:"(Green)Looked up one of the more obscure Latin words, consectetur ",
+                        blue: "(Blue)From a Lorem Ipsum passage, and going through the cites of the word. ",
+                        indigo: "(Ingigo)This book is a treatise on the theory of ethics, very popular during the. ",
+                        violet: "(Viloet)The first line of Lorem Ipsum, Lorem ipsum dolor sit amet. "]
 
 extension UIColor {
    convenience init(red: Int, green: Int, blue: Int) {
@@ -46,19 +36,4 @@ extension UIColor {
    }
 }
 //
-//let red = "rgb: 0xFF0000"
-//let okok = UIColor(rgb: 0xFFA500).cgColor
-//let yellow = UIColor(rgb: 0xFFFF00).cgColor
-//let green = UIColor(rgb: 0x008000).cgColor
-//let blue = UIColor(rgb: 0x000ff).cgColor
-//let indigo = UIColor(rgb: 0x4B0082).cgColor
-//let violet = UIColor(rgb: 0xEE82EE).cgColor
 
-let red = UIColor(rgb: 0xFF0000)
-let okok = UIColor(rgb: 0xFFA500)
-let yellow = UIColor(rgb: 0xFFFF00)
-let green = UIColor(rgb: 0x008000)
-let blue = UIColor(rgb: 0x000ff)
-let indigo = UIColor(rgb: 0x4B0082)
-let violet = UIColor(rgb: 0xEE82EE)
-let colorS: [UIColor] = [red, okok, yellow, green, blue, indigo, violet]
